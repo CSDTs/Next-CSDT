@@ -1,0 +1,91 @@
+<ul id="sidenav" class="list-group list-group-flush">
+	<li class="mainlink background <%- current.source == 'index_es' ? 'active' : '' %>">
+		<a href="index_es.html">
+			<div>Introducción</div>
+		</a>
+	</li>
+	<% if(locals.category === 'Background') { %>
+	<li class="background_link sublink <%- current.source == 'wovenheaven_es' ? 'active' : '' %>">
+		<a href="wovenheaven_es.html">
+			<div>SCI: Cielo Tejido</div>
+		</a>
+	</li>
+	<li class="background_link sublink <%- current.source == 'tangledearth_es' ? 'active' : '' %>">
+		<a href="tangledearth_es.html">
+			<div>SCI: Tierra Enredada</div>
+		</a>
+	</li>
+	<li class="background_link sublink <%- current.source == 'beadworkalgorithm_es' ? 'active' : '' %>">
+		<a href="beadworkalgorithm_es.html">
+			<div>Trabajo con Cuentas: Algoritmos</div>
+		</a>
+	</li>
+	<li class="background_link sublink <%- current.source == 'beadworkstatistics_es' ? 'active' : '' %>">
+		<a href="beadworkstatistics_es.html">
+			<div>Trabajo con Cuentas: Estadística</div>
+		</a>
+	</li>
+	<% } %>
+
+	<li class="mainlink spacer <%- current.source == 'tutorial' ? 'active' : '' %>">
+		<a href="/static/tutorials/index.html?name=whte-es">
+			<div>Tutorial</div>
+		</a>
+	</li>
+
+	<li class="mainlink spacer <%- current.source == 'challenges_es' ? 'active' : '' %>">
+		<a href="challenges_es.html">
+			<div>Retos 1</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'background2_es' ? 'active' : '' %>">
+		<a href="background2_es.html">
+			<div>Antecedentes 2</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'challenges2_es' ? 'active' : '' %>">
+		<a href="challenges2_es.html">
+			<div>Retos 2</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'background3_es' ? 'active' : '' %>">
+		<a href="background3_es.html">
+			<div>Antecedentes 3</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'challenges3_es' ? 'active' : '' %>">
+		<a href="challenges3_es.html">
+			<div>Retos 3</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'software_es' ? 'active' : '' %>">
+		<a href="/applications/67/run">
+			<div>Software</div>
+		</a>
+	</li>
+
+	<li class="mainlink spacer teaching <%- current.source == 'teaching_es' ? 'active' : '' %>">
+		<a href="teaching_es.html">
+			<div>Materiales de enseñanza</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'index_bp' ? 'active' : '' %>">
+		<a href="index_bp.html">
+			<div>Em Português</div>
+		</a>
+	</li>
+	<li class="mainlink spacer <%- current.source == 'index' ? 'active' : '' %>">
+		<a href="index.html">
+			<div>In English</div>
+		</a>
+	</li>
+</ul>
+<!-- <div class="dropdown language-select">
+	<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+		<i class="fas fa-language"></i> Selecciona un idioma:
+	</button>
+	<div class="dropdown-menu">
+		<a role="button" class="dropdown-item" href="index_bp.html">Português</a>
+		<a role="button" class="dropdown-item" href="index.html">English</a>
+	</div>
+</div> -->

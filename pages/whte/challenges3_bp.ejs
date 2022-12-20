@@ -1,0 +1,90 @@
+<h1>
+	Retos 3
+</h1>
+
+<h2>Retos de diseño estadístico</h2>
+
+
+
+<ol>
+
+	<li> <strong> Caminata aleatoria de Shipibo </strong>
+		<ol type="a">
+			<li>
+				<p>El trazado de un trazado se realiza con el bloque de "lápiz". Para explorar las posibles
+					direcciones hacia donde podría seguirse el camino, el algoritmo puede "mirar hacia
+					adelante". Podemos hacer esto al memorizar la actual posición en las coordenadas "x" y
+					"y", después levantando el "lápiz" y finalmente avanzando en la dirección dada. Si
+					percibe el color que está buscando, sabe que no necesita ir más lejos. Si no lo percibe,
+					regresa a la anterior posición en los ejes "x" y "y", baja el "lápiz" y se continúa
+					moviéndose a la nueva posición.</p>
+				<p><a href="/projects/2191/run">Abrir aplicación</a></p>
+
+			</li>
+			<li>Cambiemos el algoritmo de manera que dejemos "rebotar" a la mano en la
+				línea negra (cambiando así de dirección).
+			</li>
+			<li>Ahora estamos listos para simular el siguiente diseño Shipibo:
+				<p><a href="/projects/2192/run">Abrir aplicación</a></p>
+
+
+				<p>Podemos observar que algunas veces la mano se "atasca". Para solucionar este problema,
+					podemos registrar el número de veces que se "atasca" y utilizar un lugar aleatorio para
+					reiniciar tras un número fijo de "atasques".</p>
+			</li>
+		</ol>
+	</li>
+
+	<li> <strong> Curva fractal Shipibo </strong>
+
+		<ol type="a">
+			<li>No todos los diseños complejos son resultado de patrones aleatorios. Los
+				fractales son una forma de crear complejidad de una manera determinista. Las curvas
+				fractales pueden crearse mediante la sustitución de una línea en manera recursiva, en la que
+				cada línea que compone una figura se sustituye por una versión más pequeña de esta misma.
+				Podemos explorar este concepto en la siguiente aplicación:
+
+				<p><a href="/projects/6448/run">Abrir aplicación Shipibo fractal!</a></p>
+
+		</ol>
+	</li>
+
+
+	<li> <strong> Percolación Kuna </strong>
+		<ol type="a">
+			<li>
+				<p>La percolación describe el flujo de agua en el suelo, del fuego en un bosque, etc.
+					Podemos decir que es una "búsqueda paralela", porque intenta encontrar muchos caminos
+					diferentes al mismo tiempo. Una manera de simular la percolación es tener un registro
+					que guarde las coordenadas de un punto anterior y comienze a ramificarse desde allí.</p>
+
+				<p><a href="/projects/2188/run">Abrir aplicación</a></p>
+
+
+		</ol>
+	</li>
+
+	<li> <strong> Simulación de Endara Crow </strong>
+		<ol type="a">
+			<li>El famoso ladrón del realismo mágico se ha robado las esferas de la pintura
+				de Endara Crow. ¡Ayúdennos a recuperarlas!
+				<p><a href="/projects/1892/run">Abrir aplicación</a></p>
+			</li>
+		</ol>
+	</li>
+	<li> <strong> Histogramas </strong>
+		<ol type="a">
+			<li>Podemos utilizar la aplicación del telar de cuentas para hacer un
+				histograma que compare la distribución uniforme y la gaussiana.
+				<p>Distribución Unifoame: <a href="/projects/2185/run">Abrir aplicación</a>
+				</p>
+				<p>Distribución Gaussiana: <a href="/projects/2184/run">Abrir aplicación</a>
+				</p>
+
+
+			<li>Los "mapas de calor" utilizan colores para indicar valores numéricos
+				(cantidades). ¿Podemos hacer que el histograma use cuentas de colores como un "mapa de
+				calor"?</li>
+		</ol>
+	</li>
+</ol>

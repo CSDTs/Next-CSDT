@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<title><%= locals.pageTitle %> | CSDT</title>
+	<%- partial("_header") %>
+
+	<body>
+		<%- partial("../partials/_nav") %>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex"><%- partial("_sidenav") %></div>
+				<div class="col-lg-10"><%- yield %></div>
+			</div>
+		</main>
+
+		<%- partial("_footer") %>
+	</body>
+</html>

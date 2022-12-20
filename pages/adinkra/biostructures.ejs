@@ -1,0 +1,136 @@
+<hr />
+<a href="./spirals.html"> <i class="fas fa-angle-left"></i> Back to Adinkra Spirals</a>
+<hr />
+
+<h1>Why Do We See Logarithmic Spirals in Biological Structures?</h1>
+
+<h2 class="mt-5">Cell Growth</h2>
+
+<div class="row">
+	<div class="col-md-9">
+		<p>
+			The simple idea of one cell splitting into two cells can help us understand log scaling. Each &quot;daughter&quot;
+			cell splits into two more the next month, and so on. If we plot the sum of cells (S) each time period (t), we
+			notice that it follows the curve S = 2<sup>t</sup>. You can see a simulation
+			<a href="/applications/126/run">here</a>. The equation is S = P(1+I)<sup>t</sup> where P is the principle
+			(starting) number of cells, and I is the increase rate (the rate of cell reproduction). S = P(1+I)<sup>t</sup> =
+			1*(1+1)<sup>t</sup> = 2<sup>t</sup>.
+		</p>
+		<p>
+			Of course real cells don't all reproduce at the same time. Suppose only half reproduced each month (rate of
+			reproduction 0.5), then the graph is less steep: S = 1.5<sup>t</sup> Its the same equation for a bank account: P
+			is the Principle amount of dollars, just like the principle number of cells you start with. Interest rate I = 0.5,
+			just like the cell reproduction rate. Compounded each month t, then total savings S= P(1+I)<sup>t</sup> =
+			1(1+0.5)<sup>t</sup> = 1.5<sup>t</sup>.
+		</p>
+		<p>
+			The image at bottom is a nautilus shell, split in half so you can see how the mollusk developed a new chamber as
+			it grew. You can experiment with a simulation <a href="/projects/21306/run">here</a>. Each chamber in the
+			simulation is 104% larger than the previous. If the size is proportional to the number of cells, that means the
+			cells reproduce on average at a rate of 0.04.
+		</p>
+	</div>
+	<div class="col-md-3">
+		<img src="./img/cellsdoubling.jpg" alt="" class="img-fluid rounded" />
+		<img src="./img/cell%20graph.jpg" alt="Cell Growth Graph" class="img-fluid rounded" />
+		<p class="figure-caption text-center">Cell Growth Graph</p>
+	</div>
+</div>
+<p>
+	In addition to growing by 104%, each chamber in the simulation is rotated 18 degrees from the previous. If you
+	increase the growth rate-- say, 105%-- you will see that the spiral creates gaps--more like a horn than a shell. So if
+	you increase the growth rate, you have to make the shell more &quot;tightly coiled&quot; to prevent gaps. The West
+	African artisans who create Adinkra stamp carvings describe the growth rate of spirals in similar ways-- the terms
+	they use in Twi, &quot;aboapua awan&quot; and &quot;ntitim awan,&quot; translate into English as &quot;tightly
+	coiled&quot; and &quot;loosely coiled&quot;. Which is a better match to the nautilus shell?
+</p>
+<div class="row justify-content-around">
+	<div class="col-md-3">
+		<img src="./img/nautilus.jpg" alt="nautilus" class="img-fluid rounded" />
+		<p class="figure-caption text-center">Nautilus</p>
+	</div>
+	<div class="col-md-3 align-self-center">
+		<img src="./img/natalusspiral.jpg" alt="natalusspiral" class="img-fluid rounded" />
+		<p class="figure-caption text-center">
+			Tightly coiled <br />
+			("aboapua awan")
+		</p>
+	</div>
+	<div class="col-md-3 align-self-center">
+		<img src="./img/natalusspiral2.jpg" alt="natalusspiral2" class="img-fluid rounded" />
+		<p class="figure-caption text-center">
+			Loosely coiled <br />
+			("ntitim awan")
+		</p>
+	</div>
+</div>
+
+<h2>Scaling Constant</h2>
+
+<p>
+	If you said &quot;tightly coiled&quot; is a better match, you were right! Our eyes have put us on the right track; now
+	lets see if numbers can help us make that more exact. The spiral&rsquo;s equation in polar coordinates is radius =
+	e<sup>C*theta</sup>, where e is the base of the natural log, theta is the angle, and C is a constant. You can think of
+	C as the &ldquo;coil&rdquo; parameter. For a tightly coiled log spiral like the one above, C is smaller: in this case
+	0.2. For a loosely coiled spiral like the one below, C is larger (0.4). In the simulation
+	<a href="/projects/21305/run">here</a>
+	you can explore the cultural curves of adinkra and biological curves of nature, using the blocks you see below the
+	spirals.
+</p>
+
+<div class="row justify-content-around">
+	<div class="col-md-5">
+		<img src="./img/tightcoil.png" alt="" class="img-fluid rounded" /><br />
+		<img src="./img/logblock4.png" alt="" class="img-fluid rounded" /><br />
+	</div>
+	<div class="col-md-5">
+		<img src="./img/loosecoil.png" alt="" class="img-fluid rounded" /><br />
+		<img src="./img/logblock02.png" alt="" class="img-fluid rounded" />
+	</div>
+</div>
+
+<p>
+	We can also measure spirals in nature or culture to find the constant. First, take a protractor and measure the radius
+	at selected angles. You can do that with the simulation <a href="/projects/21307/run">here</a>. Then take the log of
+	each radius, as shown here.
+	<em>Your values will vary depending on the size parameter you use.</em>
+</p>
+<div>
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<tbody>
+				<tr>
+					<th scope="col">Angle:</th>
+					<td>450</td>
+					<td>540</td>
+					<td>630</td>
+					<td>720</td>
+				</tr>
+				<tr>
+					<th scope="col">Radius:</th>
+					<td>24</td>
+					<td>44</td>
+					<td>86</td>
+					<td>163</td>
+				</tr>
+				<tr>
+					<th scope="col">ln(radius):</th>
+					<td>3.17</td>
+					<td>3.78</td>
+					<td>4.45</td>
+					<td>5.09</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="figure-caption text-left">Table of angle versus radius and log</p>
+	</div>
+	<p>
+		Finally, graph the log of the radius as a function of angle. The slope is .82/270 = .003. So C= 10<sup>.003</sup>
+		= 0.5.
+	</p>
+</div>
+
+<div>
+	<img src="./img/graph2.png" alt="" class="img-fluid rounded" />
+	<p class="figure-caption text-left">Log of the radius as a function of angle</p>
+</div>

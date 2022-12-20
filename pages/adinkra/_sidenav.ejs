@@ -1,0 +1,66 @@
+<ul id="sidenav" class="list-group list-group-flush">
+	<li class="mainlink <%- current.source == 'index' ? 'active' : '' %>">
+		<a href="index.html">Background</a>
+	</li>
+	<% if(locals.category === 'Background') { %>
+	<li class="sublink <%- current.source == 'origins' ? 'active' : (current.source == 'symbols'? 'active': '') %>">
+		<a href="origins.html">Origins</a>
+	</li>
+	<li class="sublink <%- current.source == 'making' ? 'active' : '' %>">
+		<a href="making.html">Making & Use</a>
+	</li>
+	<li
+		class="sublink <%- current.source == 'spirals' ? 'active' : (current.source == 'ramshorns' ? 'active' : (current.source == 'biostructures' ? 'active' : '')) %>">
+		<a href="spirals.html">Spirals</a>
+	</li>
+
+	<li class="sublink <%- current.source == 'stamping' ? 'active' : '' %>">
+		<a href="stamping.html">Stamping</a>
+	</li>
+	<li class="sublink <%- current.source == 'geometry' ? 'active' : '' %>">
+		<a href="geometry.html">Geometry</a>
+	</li>
+	<% } %>
+	<li class="mainlink <%- current.source == 'tutorials' ? 'active' : '' %>">
+		<a href="tutorials.html">Tutorials</a>
+	</li>
+	<li class="mainlink <%- current.source == 'software' ? 'active' : '' %>">
+		<a href="software.html">Software</a>
+	</li>
+	<li class="mainlink <%- current.source == 'challenges' ? 'active' : '' %>">
+		<a href="challenges.html">Challenges</a>
+	</li>
+	<li class="mainlink <%- current.source == 'teaching' ? 'active' : '' %>">
+		<a href="teaching.html">Teaching Materials</a>
+	</li>
+	<% if(locals.category === 'Teaching') { %>
+	<li class="sublink <%- current.source == 'teaching-evaluation' ? 'active' : '' %>">
+		<a href="teaching-evaluation.html">Adinkra Evaluation</a>
+	</li>
+
+	<li class="sublink <%- current.source == 'teaching-computational' ? 'active' : '' %>">
+		<a href="teaching-computational.html">Computational Thinking</a>
+	</li>
+	<li class="sublink <%- current.source == 'teaching-unplugged' ? 'active' : '' %>">
+		<a href="teaching-unplugged.html">CSDTs Unplugged</a>
+	</li>
+	<li class="sublink">
+		<a href="resources/ghanaadinkrabackground.pdf">Ghana Presentation</a>
+	</li>
+	<li class="sublink <%- current.source == 'teaching-3d' ? 'active' : '' %>">
+		<a href="teaching-3d.html">3D Printing Stamps</a>
+	</li>
+	<li class="sublink <%- current.source == 'teaching-foam' ? 'active' : '' %>">
+		<a href="teaching-foam.html">Foam Cutting Stamps</a>
+	</li>
+	<li class="sublink <%- current.source == 'teaching-pewter' ? 'active' : '' %>">
+		<a href="teaching-pewter.html">Metal Castings</a>
+	</li>
+	<li class="sublink <%- current.source == 'teaching-logspiral' ? 'active' : '' %>">
+		<a href="teaching-logspiral.html">Log Spiral Block</a>
+	</li>
+	<% } %>
+	<li class="mainlink <%- current.source == 'acknowledgements' ? 'active' : '' %>">
+		<a href="acknowledgements.html">Acknowledgements</a>
+	</li>
+</ul>

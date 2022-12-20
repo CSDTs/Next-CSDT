@@ -1,0 +1,86 @@
+{
+    "origins": {
+        "pageTitle": "Origins",
+        "category": "Background"
+    },
+    "index": {
+        "pageTitle": "Adinkra Background",
+        "category": "Background"
+    },
+    "making": {
+        "pageTitle": "Making and Using",
+        "category": "Background"
+    },
+    "spirals": {
+        "pageTitle": "Spirals",
+        "category": "Background"
+    },
+    "stamping": {
+        "pageTitle": "Stamping",
+        "category": "Background"
+    },
+    "geometry": {
+        "pageTitle": "Geometry",
+        "category": "Background"
+    },
+    "tutorials": {
+        "pageTitle": "Adinkra Tutorials",
+        "category": "Tutorials"
+    },
+    "software": {
+        "pageTitle": "Adinkra Software",
+        "category": "Software"
+    },
+    "challenges": {
+        "pageTitle": "Adinkra Challenges",
+        "category": "Challenges"
+    },
+    "teaching": {
+        "pageTitle": "Teaching Materials",
+        "category": "Teaching"
+    },
+    "ramshorns": {
+        "pageTitle": "Rams' Horns",
+        "category": "Background"
+    },
+    "teaching-evaluation": {
+        "pageTitle": "Evaluation of Adinkra Computing",
+        "category": "Teaching"
+    },
+    "teaching-computational": {
+        "pageTitle": "Computational Thinking with Adinkra",
+        "category": "Teaching"
+    },
+    "teaching-3d": {
+        "pageTitle": "3D Printed Adinkra Stamps",
+        "category": "Teaching"
+    },
+    "teaching-foam": {
+        "pageTitle": "Foam Adinkra Stamps",
+        "category": "Teaching"
+    },
+    "teaching-pewter": {
+        "pageTitle": "Casting Adinkra in Pewter",
+        "category": "Teaching"
+    },
+    "teaching-unplugged": {
+        "pageTitle": "CSDTs Unplugged",
+        "category": "Teaching"
+    },
+    "acknowledgements": {
+        "pageTitle": "Acknowledgements",
+        "category": "Acknowledgements"
+    },
+    "biostructures": {
+        "pageTitle": "Biostructures",
+        "category": "Background"
+    },
+    "symbols": {
+        "pageTitle": "Symbols",
+        "category": "Background"
+    },
+    "teaching-logspiral": {
+        "pageTitle": "The Log Spiral Block",
+        "category": "Teaching"
+    }
+}

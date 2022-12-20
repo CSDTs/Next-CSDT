@@ -1,0 +1,215 @@
+{
+  "index": {
+    "pageTitle": "Background",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "wovenheaven": {
+    "pageTitle": "IKS: Woven Heaven",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "tangledearth": {
+    "pageTitle": "IKS: Tangled Earth",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "beadworkalgorithm": {
+    "pageTitle": "Beadwork Algorithm",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "beadworkstatistics": {
+    "pageTitle": "Beadwork Statistics",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "background2": {
+    "pageTitle": "Background 2",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "challenges2": {
+    "pageTitle": "Challenges 2",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "background3": {
+    "pageTitle": "Background 3",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "ecologyandsustainability": {
+    "pageTitle": "Ecology &amp Sustainability",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "challenges3": {
+    "pageTitle": "Challenges 3",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "software": {
+    "pageTitle": "Software",
+    "customjs": "$(document).ready(function() {var container_width = 950 * $(\".challenges .tutorial-node\").length;$(\".challenges\").css(\"width\", container_width);});",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "teaching": {
+    "pageTitle": "Teaching Materials",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "tutorial": {
+    "pageTitle": "Tutorial",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "challenges": {
+    "pageTitle": "Challenge",
+    "layout": "_layout",
+    "category": "Background"
+  },
+  "index_es": {
+    "pageTitle": "Background",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "wovenheaven_es": {
+    "pageTitle": "IKS: Woven Heaven",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "tangledearth_es": {
+    "pageTitle": "IKS: Tangled Earth",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "beadworkalgorithm_es": {
+    "pageTitle": "Beadwork Algorithm",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "beadworkstatistics_es": {
+    "pageTitle": "Beadwork Statistics",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "background2_es": {
+    "pageTitle": "Background 2",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "challenges2_es": {
+    "pageTitle": "Challenges 2",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "background3_es": {
+    "pageTitle": "Background 3",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "ecologyandsustainability_es": {
+    "pageTitle": "Ecology &amp Sustainability",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "challenges3_es": {
+    "pageTitle": "Challenges 3",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "software_es": {
+    "pageTitle": "Software",
+    "customjs": "$(document).ready(function() {var container_width = 950 * $(\".challenges .tutorial-node\").length;$(\".challenges\").css(\"width\", container_width);});",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "teaching_es": {
+    "pageTitle": "Teaching Materials",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "tutorial_es": {
+    "pageTitle": "Tutorial",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "challenges_es": {
+    "pageTitle": "Challenge",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "index_bp": {
+    "pageTitle": "Background",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "wovenheaven_bp": {
+    "pageTitle": "IKS: Woven Heaven",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "tangledearth_bp": {
+    "pageTitle": "IKS: Tangled Earth",
+    "layout": "_layoutes",
+    "category": "Background"
+  },
+  "beadworkalgorithm_bp": {
+    "pageTitle": "Beadwork Algorithm",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "beadworkstatistics_bp": {
+    "pageTitle": "Beadwork Statistics",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "background2_bp": {
+    "pageTitle": "Background 2",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "challenges2_bp": {
+    "pageTitle": "Challenges 2",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "background3_bp": {
+    "pageTitle": "Background 3",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "ecologyandsustainability_bp": {
+    "pageTitle": "Ecology &amp Sustainability",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "challenges3_bp": {
+    "pageTitle": "Challenges 3",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "software_bp": {
+    "pageTitle": "Software",
+    "customjs": "$(document).ready(function() {var container_width = 950 * $(\".challenges .tutorial-node\").length;$(\".challenges\").css(\"width\", container_width);});",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "teaching_bp": {
+    "pageTitle": "Teaching Materials",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "tutorial_bp": {
+    "pageTitle": "Tutorial",
+    "layout": "_layoutbp",
+    "category": "Background"
+  },
+  "challenges_bp": {
+    "pageTitle": "Challenge",
+    "layout": "_layoutbp",
+    "category": "Background"
+  }
+}

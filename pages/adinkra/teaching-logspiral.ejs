@@ -1,0 +1,287 @@
+<h1 class="sub">The Log Spiral Block</h1>
+<p class="subheader">How does it work?</p>
+
+<p>
+	Inside the log spiral block in the CSDT Software you can see 5 parameters. Before we dive into the script, let's
+	clarify the parameters:
+</p>
+
+<img src="./img/logspiralproblock.png" class="img-fluid rounded" alt="" />
+
+<ol>
+	<li>
+		<strong>C: </strong>the “coiled” parmeter. In the language of the adinkra artisans (Twi) they say some spirals are
+		<em>aboapua awan</em> (“tightly coiled”), and others are <em>ntitim awan</em> (“loosely coiled”). We are not
+		imposing western math, we are just translating from their geometric concept to the way it appears in your classroom.
+	</li>
+	<div class="row">
+		<div class="col-md-8">
+			<img src="./img/coil_examples.png" alt="" class="img-fluid" />
+		</div>
+	</div>
+	<p>Note that each one sweeps through the same range of angles, it is only the C parameter that changes.</p>
+	<li><strong>Sweep: </strong>indicates how many degrees the spiral sweeps through.</li>
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<tr>
+				<td><img src="./img/coil1.png" alt="" class="img-fluid" /></td>
+				<td><img src="./img/coil2.png" alt="" class="img-fluid" /></td>
+				<td><img src="./img/coil3.png" alt="" class="img-fluid" /></td>
+				<td><img src="./img/coil4.png" alt="" class="img-fluid" /></td>
+			</tr>
+			<tr>
+				<td><p>Sweep = 180</p></td>
+				<td><p>Sweep = 360</p></td>
+				<td><p>Sweep = 720</p></td>
+				<td><p>Sweep = 900</p></td>
+			</tr>
+		</table>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="./img/coil5.png" alt="" class="img-fluid" />
+			<p class="figure-caption">Sweep = -340 vs -700</p>
+		</div>
+		<div class="col-md-6 align-self-center">
+			<p>
+				Note that if sweep is positive, as in the examples below, we draw from the center, spiraling outward. If the
+				sweep is negative, we start from outside, spiraling inward.
+			</p>
+		</div>
+	</div>
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<tr>
+				<td class="text-center"><img src="./img/coil6.png" alt="" /></td>
+				<td class="text-center"><img src="./img/coil7.png" alt="" /></td>
+			</tr>
+			<tr>
+				<td><p>Sweep = -900</p></td>
+				<td><p>Sweep = 900</p></td>
+			</tr>
+		</table>
+	</div>
+	<li><strong>Size: </strong>how large the overall spiral. Change it to scale as needed</li>
+	<li>
+		<strong>Pen Growth: </strong> how quickly the thickness of the line grows. It can also be negative, shrinking the
+		thickness.
+	</li>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="./img/coil_pengrowth.png" alt="" class="img-fluid" />
+		</div>
+	</div>
+	<li>
+		<strong>Clockwise: </strong>True/False. Determines whether the final shape is clockwise or not. Note: It doesn't
+		indicate the drawing direction -- that is sweep.
+	</li>
+</ol>
+
+<p>
+	As a result, taking out the pengrowth, each unique log-spiral can be identified by their coil(<strong>C</strong>),
+	<strong>sweep</strong> (how many degrees they “spiral through”), <strong>size</strong>, and if they are
+	<strong>clockwise</strong>/not on the CSDT blocks.
+</p>
+
+<h2 class="sub">Absolute vs Relative</h2>
+<p class="subheader">Frame of Reference</p>
+
+<p>
+	<strong>Absolute: </strong> If the spiral was some object, like a spiral shell, you could imagine placing that shell
+	anywhere on the stage. In the pen growth examples above, you could see the yellow lines forming grids, such that the
+	center of the shell was exactly at the center of the grid. This absolute coordinate system places the spiral somewhere
+	on the CSDT “stage”-- For example here the gyenayme symbol is at 0.0
+</p>
+<div class="row">
+	<div class="col-md-6">
+		<img src="./img/frame-absolute.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	<strong>Relative: </strong> Going back to the shell analogy, I can have the center of the shell's spiral located
+	anywhere on the stage. So the stage has an absolute center. But the shell has its own center relative to itself. The
+	same for rotation angle. Below is a spiral whose center has an absolute position of 100,100 and absolute rotation of
+	90. But as I move my mouse along that curve, I could start at the “center” relative to the spiral. That has an
+	absolute angle of 90, but a relative angle of 0.
+</p>
+<div class="row">
+	<div class="col-md-6">
+		<img src="./img/frame-relative.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<h2>"roffset"</h2>
+<p>
+	Because we are simulating a continuous curve created by drawing or carving, we do not want to have an unexpected gap
+	between the end of one line and the start of the spiral. So we need to measure the gap and compensate for it. We call
+	this <strong>“roffset”</strong>, the distance between the center of the spiral and where the spiral ends at the
+	inside.
+</p>
+
+<p>It is measured by calculating the amount of radius when the angle is zero.</p>
+<div class="row">
+	<div class="col-md-8">
+		<img src="./img/coil-roffset.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<h2>Starting Direction</h2>
+
+<p>
+	Besides the radius, we could also draw a tangent line for each point on the spiral, which will always form a
+	consistent, fixed angle with the radius line, as annotated below.
+</p>
+
+<p>
+	For example if we are drawing from the center to outside, we start at the point with the blue arrow pointing the
+	starting direction.
+</p>
+<div class="row">
+	<div class="col-md-8">
+		<img src="./img/coil-starting.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	This is one of the properties of a log spiral. → Artisans determine how tightly the spiral coils intuitively. Here, we
+	use <strong>C</strong> - the “coil” parameter to calculate the Fixed Direction, through the formula below:
+</p>
+
+<h3>
+	<strong><em>arctan(1/C)</em></strong>
+</h3>
+
+<p>
+	Since the angle stays the same in every point of the spiral, including the point which we start drawing from, we will
+	call this a “fixed direction”. When we are at the starting point, we use this to calculate
+	<strong>“Starting Direction”</strong>, matching the <strong>starting direction</strong> variable in the script.
+</p>
+
+<p>
+	Move your mouse on the log spiral blocks, right click “edit”, you could find some scripts that directs the pen
+	collectively: (if it's overwhelming at first to look at, don't worry)
+</p>
+
+<div class="row">
+	<div class="col-md-5">
+		<img src="./img/block-edit.png" alt="" class="img-fluid" />
+	</div>
+</div>
+<p>You can find how we calculate the <strong>“starting direction”</strong> in the blocks below</p>
+<div class="row">
+	<div class="col-md-6">
+		<img src="./img/starting-direction.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	These blocks set the initial starting direction based on user input of the endangle (which has the same value as
+	<strong>sweep</strong>), and check whether the spiral shape is <strong>clockwise</strong> or not.
+</p>
+
+<p>
+	If we enter a c value of zero, we'd result in drawing a circle - because the consistent angle(ψ) would be 90 degrees
+	(½ π)!!
+</p>
+<p>
+	Going back to the stack of blocks that you see behind the log spiral block, this is the block that calculates roffset,
+	which we store in the script variable roffset.
+</p>
+
+<img src="./img/set-roffset.png" class="img-fluid" alt="" />
+
+<p>
+	We made use of roffset in the following script which we adjusted the position of the spiral to compensate for this
+	distinction (in blue circle).
+</p>
+
+<div class="row">
+	<div class="col-md-6">
+		<img src="./img/sd-1.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	The “segments” are very small increments of straight lines that draw the spiral. So small that the human eye sees them
+	joined as a curve. We draw these little portions one by one with the increase of <strong>“tinc”</strong>(theta
+	increment). - which we add to the <strong>“t”</strong> (theta). Theta is the <em>relative angle</em> that we calculate
+	the radius from.
+</p>
+<div class="row">
+	<div class="col-md-4">
+		<img src="./img/sd-2.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	What is <strong>relative angle</strong>? If we don't consider the rotating of each spiral and consider its starting
+	direction to be angle zero, each point will then just be identified by the radius and its angle. (r, t). [θ - ‘theta']
+</p>
+
+<p>
+	We name it <strong>relative angle</strong>, because an absolute angle of a point is the value if we put a polar
+	coordinate as the background on the large canvas of CSDT, considering the initial direction of the pen.
+</p>
+
+<div class="row">
+	<div class="col-md-5">
+		<img src="./img/ab-1.png" alt="" class="img-fluid" />
+	</div>
+</div>
+<p>
+	For example, if we are initially pointing straight upward “to the ceiling” (the angle would be 90), keeping the other
+	variables the same with this spiral, we will draw something like this:
+</p>
+<div class="row">
+	<div class="col-md-4">
+		<img src="./img/ab-2.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	Thus, we only need the <strong>Relative Angle</strong> to calculate <strong>radius</strong>. In our script, this
+	variable is <strong>t</strong>.
+</p>
+
+<p>With each relative angle (marked in purple), we then calculate a radius to find the exact place to put the pen.</p>
+
+<div class="row">
+	<div class="col-md-5">
+		<img src="./img/ab-3.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>We make use of each step that the angel changes, from which our change for the radius is based on.</p>
+
+<p>
+	Thus the formula that defines every log spiral (notice that c, the coil parameter, is exponentially related to the
+	radius) is:
+</p>
+
+<h3>
+	<strong
+		><em>r= e<sup>C*t</sup></em></strong
+	>
+</h3>
+
+<p>We terminate when all the increments are being drawn.</p>
+<div class="row">
+	<div class="col-md-8">
+		<img src="./img/repeat-seg.png" alt="" class="img-fluid mb-2" />
+
+		<img src="./img/repeat-mod-seg.png" alt="" class="img-fluid" />
+	</div>
+</div>
+
+<p>
+	Note: There are differentiations of specific tasks when the input value of sweep is positive or negative, and if the
+	shape is clockwise or not.
+</p>
+
+<p>
+	<strong>
+		To see the full breakdown of the log spiral block, click
+		<a href="./resources/howdoesthelogspiralwork.pdf">here.</a>
+	</strong>
+</p>
